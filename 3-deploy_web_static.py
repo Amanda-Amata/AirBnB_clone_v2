@@ -6,7 +6,7 @@ from os.path import exists, isdir
 from datetime import datetime
 env.hosts = ['54.160.75.184', '54.160.66.133']
 
-def deploy():
+def do_pack():
     """generates an archive to my web servers"""
     try:
         date = datetime.now().strftime("%Y%m%d%H%M%S")
