@@ -11,7 +11,7 @@ def do_pack():
     """ generates a .tgz archive from web_static"""
 
     
-    time = datetime.utcnow()
+    date_time = datetime.utcnow()
     file = "versions/web_static_{}{}{}{}{}{}.tgz".format(
         date_time.year,
         date_time.month,
