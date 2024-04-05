@@ -9,6 +9,8 @@ env.hosts = ['54.160.75.184', '54.160.66.133']
 
 def do_pack():
     """generates an archive to my web servers"""
+    
+
     try:
         date = datetime.now().strftime("%Y%m%d%H%M%S")
         if isdir("versions") is False:
@@ -21,6 +23,8 @@ def do_pack():
 
 def do_deploy(archive_path):
     """distributes an archive to my web servers"""
+    
+
     if exists(archive_path) is False:
         return False
     try:
@@ -39,8 +43,11 @@ def do_deploy(archive_path):
     except:
         return False
 
+
 def deploy():
     """creates and distributes an archive to the web servers"""
+    
+
     archive_path = do_pack()
     if archive_path is None:
         return False
