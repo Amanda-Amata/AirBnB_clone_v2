@@ -56,9 +56,10 @@ section.filters button:hover {
     background-color: #FAFAFA;
     border: solid #DDDDDD 1px;
     border-radius: 4px;
-    margin-top: 7%;
-    padding-bottom: 10%;
-    z-index: 1;
+    padding-bottom: 25px;
+    overflow-y: scroll;
+    max-height: 300px;
+    height: fit-content;
 }
 .popover li h2{
     padding: 0;
